@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    {% include "snippets/head.html" %}
+
+    <!-- My CSS-->
+    <link rel="stylesheet" href="{% static 'kontak/css/styles.css' %}">
+
+    <title>Kontak | DKP Provinsi Banten</title>
+</head>
+
+<body>
+    <!-- Topbar -->
+    {% include "snippets/topbar.html" %}
+    <!-- Akhir topbar -->
+
+    <!-- Navbar -->
+    {% include "snippets/navbar.html" %}
+    <!-- Akhir navbar -->
+
+    <!-- Hero -->
+    <section>
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <h1>Kontak</h1>
+                        </div>
+                        <nav aria-label="breadcrumb" style="color: #fff;">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" style="font-size: 1.25rem;"><a href="/"
+                                        style=" text-decoration :none; color: #fff;">Beranda</a></li>
+                                <li class="breadcrumb-item" aria-current="page" style="font-size: 1.25rem;">Kontak</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir hero -->
+
+    <!-- Kontak -->
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center my-3">
+                <div class="col">
+                    <h2>Permohonan Informasi</h2>
+                </div>
+                <hr>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Subjek</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn text-light mb-3"
+                            style="background-color: #0099ff;">Kirim</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <!-- Akhir Kontak -->
+
+    <!-- Footer -->
+    {% include "snippets/footer.html" %}
+    <!-- Akhir footer-->
+
+    <!-- Go to Top Button -->
+    {% include "snippets/buttontop.html" %}
+
+    {% include "snippets/scripts.html" %}
+
+</body>
+
+</html>
